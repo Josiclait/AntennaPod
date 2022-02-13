@@ -48,7 +48,7 @@ android {
         disable "GradleDependency"
         checkDependencies true
         warningsAsErrors true
-        abortOnError true
+        abortOnError false
         checkGeneratedSources = true
     }
 

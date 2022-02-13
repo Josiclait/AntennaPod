@@ -34,6 +34,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.specialeffects.ParticleEffects;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -104,6 +105,9 @@ public class MainActivity extends CastEnabledActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        ParticleEffects particleHandler = new ParticleEffects();
+        System.out.println(particleHandler.createParticle());
+
         lastTheme = UserPreferences.getNoTitleTheme();
         setTheme(lastTheme);
         if (savedInstanceState != null) {
