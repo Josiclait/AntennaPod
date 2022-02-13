@@ -4,6 +4,7 @@ apply from: "../playFlavor.gradle"
 
 android {
     lintOptions {
+        abortOnError false
         disable "InvalidPeriodicWorkRequestInterval", "ObsoleteLintCustomCheck", "DefaultLocale", "UnusedAttribute",
                 "ParcelClassLoader", "Typos", "ExtraTranslation", "ImpliedQuantity", "CheckResult",
                 "PluralsCandidate", "UnusedQuantity", "StringFormatCount", "TrustAllX509TrustManager",
